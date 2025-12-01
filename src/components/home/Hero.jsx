@@ -33,9 +33,9 @@ const Hero = () => {
 							))}
 						</ul>
 						<ul className='mt-7 buttons'>
-							<li data-scroll-nav='8'>
-								<Button text='HIRE ME' prefix={<IoMdPaperPlane size={18} />} />
-							</li>
+							<a href="https://t.me/rustem_aydin" data-scroll-nav='8'>
+								<Button text='İletişime Geç' prefix={<IoMdPaperPlane size={18} />} />
+							</a>
 						</ul>
 					</div>
 					<div className='hero-image flex-[0_0_20.3rem] max-md:hidden'>

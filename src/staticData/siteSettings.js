@@ -1,6 +1,5 @@
 import logo from '@/public/assets/img/site-logo.svg';
 import { IoHomeOutline } from 'react-icons/io5';
-import { CiUser } from 'react-icons/ci';
 import { IoBriefcaseOutline } from 'react-icons/io5';
 import { SlGraduation } from 'react-icons/sl';
 import {
@@ -11,9 +10,7 @@ import {
 	FaTwitter,
 	FaInstagram,
 } from 'react-icons/fa';
-import { BsListTask } from 'react-icons/bs';
 import { LiaBlogSolid } from 'react-icons/lia';
-import { BiCommentDetail } from 'react-icons/bi';
 import { FaRegUser } from 'react-icons/fa6';
 import { MdFormatListBulleted } from 'react-icons/md';
 

@@ -19,24 +19,20 @@ const AboutMe = () => {
 			<div className='px-5 py-8 md:p-8 bg-white dark:bg-nightBlack rounded-2xl about-section lg:p-10 2xl:p-13'>
 				<div className='inline-flex items-center gap-2 px-4 py-2 text-xs tracking-wide text-black dark:text-white border lg:px-5 section-name border-platinum dark:border-greyBlack200 rounded-4xl'>
 					<CiUser className='text-theme' size={14} />
-					ABOUT ME
+					Hakkımda
 				</div>
 				<div className='mt-7 md:mt-10 section-title'>
 					<h2 className='title text-[32px] md:text-4xl lg:text-5xl font-extralight text-black dark:text-white leading-1.27'>
-						About <span className='font-semibold text-theme'>Me</span>
+						Ben <span className='font-semibold text-theme'>Kimim</span>
 					</h2>
 					<p className='max-w-2xl mt-4 md:mt-6 subtitle'>
-						Hi, my name is{' '}
-						<span className='text-black dark:text-white'>
-							{userDetailsSidebar?.userName}
-						</span>{' '}
-						. As a developer, I enjoy using my obsessive attention to detail, my
-						unequivocal love for creating things, and my
-						<span className='text-black dark:text-white'>
-							{' '}
-							mission-driven{' '}
-						</span>{' '}
-						work ethic to complete my objectives.
+							<span className='text-black dark:text-white'>
+													Selamün Aleyküm ben Rüstem.
+
+						</span><br/>
+						
+						Geliştirme yaparken en çok; detaylara olan hassasiyetim, bir şeyler üretmekten aldığım gerçek keyif ve hedefime ulaşana kadar pes etmeyen yapım beni motive eder. Web veya mobil fark etmeksizin, ortaya gerçekten kaliteli bir iş çıkarmak için çalışmayı seviyorum.
+					
 					</p>
 				</div>
 				<div className='mt-6 section-content'>

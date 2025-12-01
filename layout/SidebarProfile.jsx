@@ -64,102 +64,82 @@ const SidebarProfile = () => {
           </ul>
         </div>
 
-        <div className="px-4 py-5 lg:py-6 lg:px-6 rounded-2xl md:px-8 bg-flashWhite dark:bg-metalBlack">
-          <div className="text-sm font-medium text-black dark:text-white">
-            Skills
-          </div>
-          <div className="flex items-center justify-between my-4 space-x-4 skills_circle">
-            {userDetailsSidebar?.skillsInfo?.map((item) => (
-              <div
-                key={item?.id}
-                className="space-y-2 text-center progressCircle"
+     <div className="px-4 py-5 lg:py-6 lg:px-6 rounded-2xl md:px-8 bg-flashWhite dark:bg-metalBlack">
+  <div className="text-sm font-medium text-black dark:text-white">
+    Yetenekler
+  </div>
+  <div className="flex flex-wrap justify-center gap-6 my-4 skills_circle">
+    {userDetailsSidebar?.skillsInfo?.map((item) => (
+      <div
+        key={item?.id}
+        className="space-y-2 text-center progressCircle min-w-[80px] flex flex-col items-center"
+      >
+        <div className="relative w-12 h-12">
+          <CountUp
+            start={0}
+            end={item?.value}
+            duration={5}
+            suffix="%"
+          >
+            {({ countUpRef, start }) => (
+              <VisibilitySensor
+                onChange={(visible) => {
+                  if (visible && !counterStarted) {
+                    setCounterStarted(true);
+                    start();
+                    setChange(true);
+                  }
+                }}
               >
-                <CountUp
-                  start={0}
-                  end={item?.value}
-                  duration={5}
-                  // redraw={true}
-                  suffix="%"
-                >
-                  {({ countUpRef, start }) => (
-                    <VisibilitySensor
-                      onChange={(visible) => {
-                        if (visible && !counterStarted) {
-                          setCounterStarted(true);
-                          start();
-                          setChange(true);
-                        }
-                      }}
-                    >
-                      {({ isVisible }) => {
-                        const percentage =
-                          isVisible || change ? item?.value : 0;
+                {({ isVisible }) => {
+                  const percentage =
+                    isVisible || change ? item?.value : 0;
 
-                        return (
-                          <CircularProgressbarWithChildren
-                            strokeWidth={3}
-                            className="relative w-12 h-12 circle"
-                            styles={{
-                              root: {},
-                              path: {
-                                stroke: "#FF4D52",
-                                transition: change
-                                  ? "stroke-dashoffset 0.5s ease 0s"
-                                  : "none",
-                                transform: "rotate(0.25turn)",
-                                transformOrigin: "center center",
-                              },
-                              // background: "red",
-                              trail: {
-                                stroke: "#B7B7B7",
-                                strokeLinecap: "butt",
-                                transform: "rotate(0.25turn)",
-                                transformOrigin: "center center",
-                              },
-                              text: {
-                                // fill: '#f88',
-                                // fontSize: '16px',
-                              },
-                              background: {
-                                fill: "#3e98c7",
-                              },
-                            }}
-                            value={percentage}
-                          >
-                            <div
-                              className="absolute inset-0 text-[13px] font-medium label flex-center"
-                              ref={countUpRef}
-                            >
-                              <p className="text-[13px] font-normal dark:font-light text-black dark:text-white/90">
-                                {percentage}
-                              </p>
-                            </div>
-                          </CircularProgressbarWithChildren>
-                        );
-                      }}
-                    </VisibilitySensor>
-                  )}
-                </CountUp>
-                <p className="text-[13px] font-normal dark:font-light text-black dark:text-white/90">
-                  {item?.name}
-                </p>
-              </div>
-            ))}
-          </div>
-          <div className="mt-6">
-            <Link
-              href="blank.pdf"
-              download
-              target="_blank"
-              className="text-center text-sm border border-theme bg-theme flex items-center justify-center gap-2 text-white rounded-4xl py-3.5 transition duration-300 text-[15px] font-semibold hover:bg-themeHover hover:border-themeHover"
-            >
-              DOWNLOAD CV
-              <span className="animate-bounce">
-                <IoCloudDownloadOutline size={18} />
-              </span>
-            </Link>
-          </div>
+                  return (
+                    <>
+                      <CircularProgressbarWithChildren
+                        strokeWidth={3}
+                        className="w-12 h-12 circle"
+                        styles={{
+                          root: {},
+                          path: {
+                            stroke: "#FF4D52",
+                            transition: change
+                              ? "stroke-dashoffset 0.5s ease 0s"
+                              : "none",
+                            transform: "rotate(0.25turn)",
+                            transformOrigin: "center center",
+                          },
+                          trail: {
+                            stroke: "#B7B7B7",
+                            strokeLinecap: "butt",
+                            transform: "rotate(0.25turn)",
+                            transformOrigin: "center center",
+                          },
+                          text: {},
+                          background: {
+                            fill: "#3e98c7",
+                          },
+                        }}
+                        value={percentage}
+                      >
+                        <div className="text-[11px] font-normal dark:font-light text-black dark:text-white/90" ref={countUpRef} />
+                      </CircularProgressbarWithChildren>
+                    </>
+                  );
+                }}
+              </VisibilitySensor>
+            )}
+          </CountUp>
         </div>
+        <p className="text-[13px] font-normal dark:font-light text-black dark:text-white/90 leading-tight break-words max-w-[80px] mx-auto">
+          {item?.name}
+        </p>
+      </div>
+    ))}
+  </div>
+
+</div>
 
         <svg className="absolute w-0 h-0">
           <clipPath

@@ -61,21 +61,16 @@ import { IoHomeOutline } from 'react-icons/io5';
 export const introduce = {
 	iconBox: {
 		Icon: <IoHomeOutline className='text-theme' size={14} />,
-		title: 'INTRODUCE',
+		title: 'Tanıtım',
 	},
 	heading: {
-		heading1: 'Turning Ideas into ',
-		heading2: 'Interactive Realities',
+		heading1: '🔥 Modern ve Profesyonel',
+		heading2: 'Çok Platformlu Dijital Deneyimler Tasarlıyorum',
 	},
 	desc: (
 		<p>
-			I am a{' '}
-			<span className='font-medium text-black dark:text-white/90'>
-				Frontend Developer.
-			</span>{' '}
-			I enjoy using my obsessive attention to detail, my unequivocal love for
-			creating things, and my mission-driven work ethic to complete my
-			objectives.
+			MERN Stack, Next.js ve React Native teknolojileriyle web ve mobil uygulamalar geliştiren bir Full-Stack Developer’ım.
+Üretmeye olan tutkumu, detaylara verdiğim önemi ve çözüm odaklı çalışma disiplinimi bir araya getirerek; hızlı, ölçeklenebilir ve kullanıcı odaklı dijital ürünler oluşturuyorum.
 		</p>
 	),
 	jobs: [
@@ -118,19 +113,32 @@ export const partners = [
 export const technologies = [
 	{
 		id: 1,
-		title: 'HTML5 & CSS3',
+		title: 'React.js',
 		skill: '90',
 		url: '#',
 	},
 	{
 		id: 2,
-		title: 'React.js',
+		title: 'Next.js',
 		skill: '80',
 		url: '#',
 	},
 	{
 		id: 3,
-		title: 'TailwindCSS',
+		title: 'React Native',
+		skill: '90',
+		url: '#',
+	},
+		{
+		id: 4,
+		title: 'Node.js',
+		skill: '70',
+		url: '#',
+	},
+
+		{
+		id: 4,
+		title: 'N8N',
 		skill: '70',
 		url: '#',
 	},
@@ -138,93 +146,97 @@ export const technologies = [
 
 export const userDetails = [
 	{
-		field: 'Phone',
-		value: '850.533.5877',
+		field: 'Telefon',
+		value: '0553 731 9288',
+		url:"tel:+905537319288"
 	},
 	{
-		field: 'Skype',
-		value: 'live:.cid.e150a93a0f1adeea',
+		field: 'Whatsapp',
+		value: '0553 731 9288',
+		url:"https://wa.me/905537319288?text=Merhaba%20Rüstem%2C%20sitenizi%20gördüm."
+
 	},
 	{
-		field: 'Language',
-		value: 'English',
+		field: 'Telegram',
+		value: 't.me/rustem_aydin',
+		url:"https://t.me/rustem_aydin"
+
 	},
 	{
-		field: 'Email',
-		value: 'lindseykdev@gmail.com',
+		field: 'E-posta',
+		value: 'rustemaydinn@gmail.com',
+		url:"mailto:rustemaydinn@gmail.com"
+
 	},
-	{
-		field: 'GitHub',
-		value: '@CodeLikeAGirl29',
-	},
+	
 ];
 
 export const userDetailsSidebar = {
 	userImage: userImage,
 	userImageLight: userImageLight,
-	userName: 'Lindsey Howard',
-	designations: ['Web Developer', 'Blogger', 'Graphic Designer'],
+	userName: 'Rüstem AYDIN',
+	designations: ['Web Geliştirme', 'Mobil Geliştirme', 'Tasarımcı',"Otomasyon","Yapay Zeka"],
 	basicInfo: [
 		{
 			id: 1,
-			field: 'Residence',
-			value: 'Florida',
+			field: 'Konum',
+			value: 'Ankara',
 		},
 		{
 			id: 2,
-			field: 'City',
-			value: 'Ft Walton Bch',
+			field: 'Tecrübe',
+			value: '9 Yıl',
 		},
 		{
 			id: 3,
-			field: 'Age',
-			value: '33',
+			field: 'Yaş',
+			value: '30',
 		},
 	],
 	skillsInfo: [
 		{
 			id: 1,
-			name: 'HTML',
+			name: 'React.js',
 			value: 90,
 		},
 		{
 			id: 2,
-			name: 'CSS',
+			name: 'Next.js',
 			value: 80,
 		},
 		{
 			id: 3,
-			name: 'JS',
+			name: 'React Native',
 			value: 90,
 		},
 		{
 			id: 4,
-			name: 'PHP',
-			value: 55,
+			name: 'Node.js',
+			value: 70,
+		},
+			{
+			id: 4,
+			name: 'N8N',
+			value: 70,
 		},
 	],
 };
 
 export const projectExperiences = [
 	{
-		title: 'Years Of Experience',
-		count: 4,
+		title: 'Deneyim',
+		count: 9,
 		postFix: true,
 	},
 	{
-		title: 'Handled Projects',
-		count: 100,
+		title: 'Proje Sayısı',
+		count: 20,
 		postFix: true,
 	},
 	{
-		title: 'Available Hours',
+		title: '',
 		count: 45,
 		postFix: true,
-	},
-	{
-		title: 'Certifications',
-		count: 18,
-		postFix: false,
 	},
 ];
 
