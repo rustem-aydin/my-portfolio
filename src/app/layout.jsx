@@ -27,8 +27,8 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-	title: 'Personal Resume/vCard Nextjs Template',
-	description: 'Personal Resume/vCard Nextjs Template',
+	title: 'Rüstem Aydın | Kişisel',
+	description: "Rüstem Aydın'ın Kişisel Web Sitesi",
 };
 
 export default function RootLayout({ children }) {
