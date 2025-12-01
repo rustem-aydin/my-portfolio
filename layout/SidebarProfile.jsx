@@ -8,8 +8,6 @@ import VisibilitySensor from "react-visibility-sensor";
 import { CircularProgressbarWithChildren } from "react-circular-progressbar";
 import CountUp from "react-countup";
 import { useEffect, useState } from "react";
-import { IoCloudDownloadOutline } from "react-icons/io5";
-
 const SidebarProfile = () => {
   const [change, setChange] = useState(false);
   const [counterStarted, setCounterStarted] = useState(false);

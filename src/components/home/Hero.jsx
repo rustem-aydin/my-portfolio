@@ -1,6 +1,6 @@
 import Button from '../ui/Button';
 import heroImg from '@/public/assets/img/hero-img-1.png';
-import heroImgDark from '@/public/assets/img/hero-img-2.png';
+import heroImgDark from '@/public/assets/img/pexels-markusspiske-225250.jpg';
 import { introduce, partners } from '@/src/staticData/home/home';
 import Image from 'next/image';
 import Marquee from 'react-fast-marquee';
