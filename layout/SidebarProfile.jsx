@@ -23,7 +23,7 @@ const SidebarProfile = () => {
         <div className="mx-4 mt-12 text-center user-info lg:mx-6">
           <Link
             href="/"
-            className="mb-2.5 h-36 w-36 block mx-auto border-6 border-platinum dark:border-[#2f2f2f] overflow-hidden rounded-full"
+            className="mb-2.5 h-36 w-36 block mx-auto border-platinum dark:border-[#2f2f2f] overflow-hidden rounded-full"
           >
             <Image
               className="hidden dark:block w-full h-full rounded-full"
@@ -62,7 +62,7 @@ const SidebarProfile = () => {
           </ul>
         </div>
 
-     <div className="px-4 py-5 lg:py-6 lg:px-6 rounded-2xl md:px-8 bg-flashWhite dark:bg-metalBlack">
+     <div className="px-4 py-5 lg:py-6 lg:px-6 rounded-2xl md:px-8 border border-1 border-platinum dark:border-metalBlack ">
   <div className="text-sm font-medium text-black dark:text-white">
     Yetenekler
   </div>
@@ -96,12 +96,12 @@ const SidebarProfile = () => {
                   return (
                     <>
                       <CircularProgressbarWithChildren
-                        strokeWidth={3}
+                        strokeWidth={10}
                         className="w-12 h-12 circle"
                         styles={{
                           root: {},
                           path: {
-                            stroke: "#FF4D52",
+                            stroke: "#702632",
                             transition: change
                               ? "stroke-dashoffset 0.5s ease 0s"
                               : "none",
@@ -110,13 +110,13 @@ const SidebarProfile = () => {
                           },
                           trail: {
                             stroke: "#B7B7B7",
-                            strokeLinecap: "butt",
+                            strokeLinecap: "inherit",
                             transform: "rotate(0.25turn)",
                             transformOrigin: "center center",
                           },
                           text: {},
                           background: {
-                            fill: "#3e98c7",
+                            fill: "#702632",
                           },
                         }}
                         value={percentage}

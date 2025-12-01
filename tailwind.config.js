@@ -47,7 +47,7 @@ module.exports = {
 				metalBlack: '#2d2e2f',
 				lightOrange: '#ffb657',
 				greyBlack: '#434445',
-				greyBlack200: '#0a1128',
+				greyBlack200: '#707070',
 			},
 			spacing: {
 				4.5: '1.125rem', // 18px

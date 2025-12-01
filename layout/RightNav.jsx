@@ -13,21 +13,18 @@ const RightNav = ({ midContainer }) => {
 
 	return (
 		<div className='minfo__nav__wrapper bg-snowWhite dark:bg-power__black max-xl:hidden fixed top-1/2 -translate-y-1/2 right-4 2xl:right-14 z-999 flex items-center flex-col gap-4 border border-platinum dark:border-metalBlack rounded-4xl px-2.5 py-4'>
-			{/* <!-- Site Logo Start --> */}
 			<div className='flex border rounded-full logo w-15 h-15 border-platinum dark:border-metalBlack flex-center'>
 				<Link href={siteSettings?.logo?.url}>
 					<Image
-						width={'0'}
-						height={'0'}
+						width={300}
+						height={300}
 						className='w-full h-auto'
 						src={siteSettings?.logo?.image}
 						alt={siteSettings?.logo?.alt}
 					/>
 				</Link>
 			</div>
-			{/* <!-- Site Logo End --> */}
-
-			{/* <!-- Main Menu/Navigation Start --> */}
+			
 			<div className='my-4 menu'>
 				<ul className='space-y-2 text-center minfo__nav__items'>
 					{siteSettings?.headersMenu?.map((menu, i) => (

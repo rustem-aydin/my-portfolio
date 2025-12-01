@@ -13,7 +13,7 @@ import {
 	FaRegEnvelopeOpen,
 } from 'react-icons/fa';
 import { GrTasks } from 'react-icons/gr';
-import { BiCheckDouble, BiCommentCheck } from 'react-icons/bi';
+import { BiBrain, BiCheckDouble, BiCommentCheck, BiMobile } from 'react-icons/bi';
 
 import nextjsImage from '@/public/assets/img/skill/nextjs.svg';
 import nodejsImage from '@/public/assets/img/skill/nodejs.svg';
@@ -28,8 +28,8 @@ import partner2Image from '@/public/assets/img/partners/logo2.svg';
 import partner3Image from '@/public/assets/img/partners/logo3.svg';
 import partner4Image from '@/public/assets/img/partners/logo4.svg';
 
-import userImage from '@/public/assets/img/user-sidebar-thumb.png';
-import userImageLight from '@/public/assets/img/user-sidebar-thumb-light.png';
+import userImage from '@/public/assets/img/43.svg';
+import userImageLight from '@/public/assets/img/43.svg';
 
 import portfolioImage1Thumb from '@/public/assets/img/portfolio/portfolio-img1.png';
 import portfolioImage1 from '@/public/assets/img/portfolio/portfolio-img1.png';
@@ -57,6 +57,9 @@ import blog4Image from '@/public/assets/img/blog/article4.png';
 import author1 from '@/public/assets/img/testimonial/author1.png';
 import author2 from '@/public/assets/img/testimonial/author2.png';
 import { IoHomeOutline } from 'react-icons/io5';
+import { LiaMoneyBillSolid } from 'react-icons/lia';
+import { CiMobile1 } from 'react-icons/ci';
+import { RiBrainLine } from 'react-icons/ri';
 
 export const introduce = {
 	iconBox: {
@@ -241,45 +244,61 @@ export const projectExperiences = [
 ];
 
 export const services = {
-	servicesHeading: {
-		icon: <FaBriefcase className='text-theme' />,
-		title: 'SERVICES',
-		heading: 'My',
-		coloredHeading: 'Services',
-		description:
-			'Crafting Intuitive and Engaging User Experiences with Cutting-Edge Frontend Development.',
-	},
-	servicesData: [
-		{
-			id: 1,
-			number: '01',
-			title: 'UI/UX Design',
-			desc: 'Transforming ideas into visually stunning & user-friendly interfaces, ensuring a seamless & engaging user experience.',
-			icon: <UiUxIcon />,
-		},
-		{
-			id: 2,
-			number: '02',
-			title: 'Web Development',
-			desc: 'I specialize in creating visually stunning, responsive websites that offer seamless user experiences & elevate your digital presence.',
-			icon: <WebDevIcon />,
-		},
-		{
-			id: 3,
-			number: '03',
-			title: 'SEO / Marketing',
-			desc: 'Enhance your online presence & drive organic traffic with our tailored SEO & marketing strategies designed to boost your visibility while growing your audience.',
-			icon: <SeoIcon />,
-		},
-		{
-			id: 4,
-			number: '04',
-			title: 'Branding & Strategy',
-			desc: 'Transform your brand vision into a cohesive & impactful digital presence with tailored strategies that resonate and engage.',
-			icon: <BrandingIcon />,
-		},
-	],
+  servicesHeading: {
+    icon: <FaBriefcase className='text-theme' />,
+    title: 'Hizmetlerim',
+    heading: 'Size',
+    coloredHeading: 'Nasıl Yardım Edebilirim',
+    description:
+      'Aşağıdaki alanlarda modern, hızlı ve sonuç odaklı çözümler üretiyorum.',
+  },
+  servicesData: [
+ 
+    {
+      id: 1,
+      number: '01',
+      title: 'Web Development',
+      desc: 'React, Next.js ve modern web teknolojileri ile hızlı, güvenli ve tüm cihazlara uyumlu web uygulamaları geliştiriyorum.',
+      icon: <WebDevIcon />,
+    },
+    {
+      id: 2,
+      number: '02',
+      title: 'Mobil Development (iOS & Android)',
+      desc: 'React Native ve Expo ile yüksek performanslı, modern ve tüm cihazlara uyumlu mobil uygulamalar geliştiriyorum.',
+      icon: <CiMobile1 className="size-10 fill-theme"/>, // istersen ikon tasarlayabilirim
+    },
+	   {
+      id: 3,
+      number: '03',
+      title: 'UI/UX Tasarımı',
+      desc: 'Modern, estetik ve kullanıcı dostu arayüzler tasarlayarak fikirlerinizi etkileyici bir dijital deneyime dönüştürüyorum.',
+      icon: <UiUxIcon />,
+    },
+    {
+      id: 4,
+      number: '04',
+      title: 'Yapay Zekâ Otomasyonları (n8n / AI Automation)',
+      desc: 'n8n, Zapier ve OpenAI ile iş süreçlerinizi otomatikleştiriyor, size zaman kazandıran akıllı iş akışları oluşturuyorum.',
+      icon: <BiBrain className="size-10 fill-theme"/>,
+    },
+    {
+      id: 5,
+      number: '05',
+      title: 'SEO & Dijital Pazarlama',
+      desc: 'Arama motoru odaklı içerik, hız optimizasyonu ve hedefli dijital stratejiler ile markanızın görünürlüğünü artırıyorum.',
+      icon: <SeoIcon />,
+    },
+    {
+      id: 6,
+      number: '06',
+      title: 'Branding & Strategy',
+      desc: 'Markanızı güçlü bir kimlikle dijital dünyada konumlandıracak stratejik tasarım ve içerik çözümleri üretiyorum.',
+      icon: <BrandingIcon />,
+    },
+  ],
 };
+
 
 export const skills = {
 	skillsHeading: {

@@ -1,30 +1,25 @@
-import logo from '@/public/assets/img/site-logo.svg';
+import logo from '@/public/assets/img/logo.png';
 import { IoHomeOutline } from 'react-icons/io5';
 import { IoBriefcaseOutline } from 'react-icons/io5';
-import { SlGraduation } from 'react-icons/sl';
 import {
-	FaRegFileAlt,
-	FaRegEnvelope,
 	FaFacebook,
 	FaLinkedin,
 	FaTwitter,
 	FaInstagram,
 } from 'react-icons/fa';
-import { LiaBlogSolid } from 'react-icons/lia';
 import { FaRegUser } from 'react-icons/fa6';
-import { MdFormatListBulleted } from 'react-icons/md';
 
 export const siteSettings = {
 	logo: {
 		image: logo?.src,
-		alt: 'Minfo',
+		alt: 'Rüstem',
 		url: '/',
-		text: 'Minfo',
+		text: 'rustemaydin.com',
 	},
 	headersMenu: [
 		{
 			id: 1,
-			title: 'Home',
+			title: 'Anasayfa',
 			selector: '#home',
 			url: '/',
 			Icon: <IoHomeOutline />,
@@ -32,7 +27,7 @@ export const siteSettings = {
 		},
 		{
 			id: 2,
-			title: 'About',
+			title: 'Hakkımda',
 			selector: '#about',
 			url: '/',
 			Icon: <FaRegUser />,
@@ -40,53 +35,53 @@ export const siteSettings = {
 		},
 		{
 			id: 3,
-			title: 'Services',
+			title: 'Hizmetlerim',
 			selector: '#service',
 			url: '/',
 			Icon: <IoBriefcaseOutline />,
 			notVisibleRoutes: [],
 		},
-		{
-			id: 4,
-			title: 'Skills',
-			selector: '#skill',
-			url: '/',
-			Icon: <SlGraduation />,
-			notVisibleRoutes: [],
-		},
-		{
-			id: 5,
-			title: 'Resume',
-			selector: '#resume',
-			url: '/',
-			Icon: <FaRegFileAlt />,
-			notVisibleRoutes: [],
-		},
-		{
-			id: 6,
-			title: 'Portfolio',
-			selector: '#portfolio',
-			url: '/',
-			Icon: <MdFormatListBulleted />,
-			notVisibleRoutes: [],
-		},
-		{
-			id: 7,
-			title: 'Blog',
-			selector: '#blog',
-			url: '/',
-			Icon: <LiaBlogSolid />,
-			notVisibleRoutes: [],
-		},
+		// {
+		// 	id: 4,
+		// 	title: 'Skills',
+		// 	selector: '#skill',
+		// 	url: '/',
+		// 	Icon: <SlGraduation />,
+		// 	notVisibleRoutes: [],
+		// },
+		// {
+		// 	id: 5,
+		// 	title: 'Resume',
+		// 	selector: '#resume',
+		// 	url: '/',
+		// 	Icon: <FaRegFileAlt />,
+		// 	notVisibleRoutes: [],
+		// },
+		// {
+		// 	id: 6,
+		// 	title: 'Portfolio',
+		// 	selector: '#portfolio',
+		// 	url: '/',
+		// 	Icon: <MdFormatListBulleted />,
+		// 	notVisibleRoutes: [],
+		// },
+		// {
+		// 	id: 7,
+		// 	title: 'Blog',
+		// 	selector: '#blog',
+		// 	url: '/',
+		// 	Icon: <LiaBlogSolid />,
+		// 	notVisibleRoutes: [],
+		// },
 
-		{
-			id: 9,
-			title: 'Contact',
-			selector: '#contact',
-			url: '/',
-			Icon: <FaRegEnvelope />,
-			notVisibleRoutes: [],
-		},
+		// {
+		// 	id: 9,
+		// 	title: 'Contact',
+		// 	selector: '#contact',
+		// 	url: '/',
+		// 	Icon: <FaRegEnvelope />,
+		// 	notVisibleRoutes: [],
+		// },
 	],
 	socialMedias: [
 		{

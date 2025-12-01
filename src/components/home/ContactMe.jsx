@@ -32,7 +32,6 @@ const ContactMe = () => {
     e.preventDefault();
     console.log("formValues", formValues);
 
-    // reset after form submit
     reset();
   };
 
