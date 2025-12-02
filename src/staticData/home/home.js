@@ -213,7 +213,7 @@ export const technologies = [
 	{
 		id: 3,
 		title: 'React Native',
-		skill: '90',
+		skill: '70',
 		url: '#',
 	},
 		{
@@ -294,7 +294,7 @@ export const userDetailsSidebar = {
 		{
 			id: 3,
 			name: 'React Native',
-			value: 90,
+			value: 70,
 		},
 		{
 			id: 4,
