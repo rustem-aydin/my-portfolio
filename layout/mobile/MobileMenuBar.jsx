@@ -5,7 +5,7 @@ import { RiMenu3Fill } from "react-icons/ri";
 
 const MobileMenuBar = ({ toggleDrawer }) => {
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between p-2 px-3 backdrop-blur-[2px] mobile-menu-bar sm:px-6  xl:hidden">
+    <div className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between p-2 px-3 backdrop-blur-sm mobile-menu-bar sm:px-6  xl:hidden">
       <div className="text-lg font-medium name">
         <Link
           href={siteSettings?.logo?.url}
