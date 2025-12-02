@@ -7,6 +7,8 @@ import Marquee from 'react-fast-marquee';
 import { IoMdPaperPlane } from 'react-icons/io';
 import IntroduceJob from './IntroduceJob';
 import TrustedCompany from './TrustedCompany';
+import { FaWhatsappSquare } from 'react-icons/fa';
+import { BsWhatsapp } from 'react-icons/bs';
 
 const Hero = () => {
 	return (
@@ -34,8 +36,8 @@ const Hero = () => {
 							))}
 						</ul>
 						<ul className='mt-7 buttons'>
-							<a href="https://t.me/rustem_aydin" data-scroll-nav='8'>
-								<Button text='İletişime Geç' prefix={<IoMdPaperPlane size={18} />} />
+							<a href="https://wa.me/905423749432?text=Merhaba%20Rüstem%2C%20sitenizi%20gördüm." data-scroll-nav='8'>
+								<Button text='İletişime Geç' prefix={<BsWhatsapp size={18} />} />
 							</a>
 						</ul>
 					</div>
