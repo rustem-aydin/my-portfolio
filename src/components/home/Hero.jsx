@@ -16,7 +16,7 @@ const Hero = () => {
       id="home"
       className="py-5 xl:py-3.5 max-w-content xl:max-2xl:max-w-50rem max-xl:mx-auto xl:ml-auto"
     >
-      <div className="px-5 py-8 bg-white dark:bg-nightBlack backdrop-blur-[2px] dark:bg-opacity-80 rounded-2xl hero-section md:p-8 lg:p-10 2xl:p-13">
+      <div className="px-5 py-8 bg-white bg-opacity-80 dark:bg-nightBlack backdrop-blur-[2px] dark:bg-opacity-80 rounded-2xl hero-section md:p-8 lg:p-10 2xl:p-13">
         <div className="inline-flex items-center gap-2 px-4 py-2 text-xs tracking-wide text-black dark:text-white border lg:px-5 section-name border-platinum dark:border-greyBlack200 rounded-4xl">
           {introduce?.iconBox?.Icon}
           {introduce?.iconBox?.title}
@@ -75,12 +75,12 @@ const Hero = () => {
             <div className="col-span-10  logo-slider">
               <div className="swiper relative">
                 <div className="absolute left-0 top-0 bottom-0 w-12 bg-gradient-to-r from-white via-white/50 dark:from-[#0f0f0f] dark:via-[#0f0f0f]  to-transparent pointer-events-none z-20"></div>
-                <div className="absolute left-0 top-0 bottom-0 w-24 pointer-events-none z-10">
+                <div className="absolute left-0 top-0 bottom-0 w-12 pointer-events-none z-10">
                   <div className="w-full h-full backdrop-blur-2xl [mask-image:linear-gradient(to_right,black,transparent)]"></div>
                 </div>
 
                 <div className="absolute right-0 top-0 bottom-0 w-12 bg-gradient-to-l from-white via-white/50 dark:from-[#0f0f0f] dark:via-[#0f0f0f] to-transparent pointer-events-none z-20"></div>
-                <div className="absolute right-0 top-0 bottom-0 w-24 pointer-events-none z-10">
+                <div className="absolute right-0 top-0 bottom-0 w-12 pointer-events-none z-10">
                   <div className="w-full h-full backdrop-blur-2xl [mask-image:linear-gradient(to_left,black,transparent)]"></div>
                 </div>
                 <div className="swiper-wrapper">
