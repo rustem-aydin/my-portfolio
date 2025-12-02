@@ -27,7 +27,8 @@ const Hero = () => {
 							<span className='text-theme'>{introduce?.heading?.heading2}</span>
 						</h1>
 						{introduce?.desc}
-						<ul className='flex items-center gap-3 sm:gap-6 mt-4 lg:mt-5'>
+						<ul className='grid grid-cols-2 items-center gap-3 sm:gap-6 mt-4 lg:mt-5'>
+							
 							{introduce?.jobs?.map((item, i) => (
 								<IntroduceJob key={i} {...item} />
 							))}
@@ -62,20 +63,25 @@ const Hero = () => {
 					<div className='items-center grid-cols-12 overflow-hidden md:grid'>
 						<div className='hidden col-span-2 md:inline-block'>
 							<h6 className='font-medium text-black dark:text-white/80 text-sm md:max-w-[8rem] border-l border-theme pl-4'>
-								Certified by
-							</h6>
+Yeteneklerim							</h6>
 						</div>
-						<div className='col-span-10 logo-slider'>
-							<div className='swiper'>
-								<div className='swiper-wrapper'>
-									<Marquee>
-										{partners?.map((partner, i) => (
-											<TrustedCompany key={i} {...partner} />
-										))}
-									</Marquee>
-								</div>
-							</div>
-						</div>
+				<div className='col-span-10 logo-slider'>
+	<div className='swiper relative'>
+		{/* Sol taraftan blur efekti */}
+		<div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-white via-white/50 dark:from-[#0f0f0f] dark:via-[#0f0f0f]  to-transparent pointer-events-none z-10"></div>
+		
+		{/* Sağ taraftan blur efekti */}
+		<div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-white via-white/50 dark:from-[#0f0f0f] dark:via-[#0f0f0f] to-transparent pointer-events-none z-10"></div>
+		
+		<div className='swiper-wrapper'>
+			<Marquee>
+				{partners?.map((partner, i) => (
+					<TrustedCompany key={i} {...partner} />
+				))}
+			</Marquee>
+		</div>
+	</div>
+</div>
 					</div>
 				</div>
 			</div>

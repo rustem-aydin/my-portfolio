@@ -15,6 +15,27 @@ import {
 import { GrTasks } from 'react-icons/gr';
 import { BiBrain, BiCheckDouble, BiCommentCheck, BiMobile } from 'react-icons/bi';
 
+
+import nextjs from '@/public/assets/img/skills/nextjs.svg';
+import nodejs from '@/public/assets/img/skills/nodejs.svg';
+import android from '@/public/assets/img/skills/android.svg';
+import anthropic from '@/public/assets/img/skills/anthropic.svg';
+import appledark from '@/public/assets/img/skills/apple-dark.svg';
+import bootstrap5 from '@/public/assets/img/skills/bootstrap5.svg';
+import docker from '@/public/assets/img/skills/docker.svg';
+import html5 from '@/public/assets/img/skills/html5.svg';
+import linux from '@/public/assets/img/skills/linux.svg';
+import microsoftsqlserver from '@/public/assets/img/skills/microsoft-sql-server.svg';
+import mongodb from '@/public/assets/img/skills/mongodb.svg';
+import n8n from '@/public/assets/img/skills/n8n.png';
+import postgresql from '@/public/assets/img/skills/postgresql.svg';
+import reactquery from '@/public/assets/img/skills/react-query.svg';
+import reactjs from '@/public/assets/img/skills/reactjs.svg';
+import supabase from '@/public/assets/img/skills/supabase.svg';
+import tailwindcss from '@/public/assets/img/skills/tailwindcss.svg';
+
+
+
 import nextjsImage from '@/public/assets/img/skill/nextjs.svg';
 import nodejsImage from '@/public/assets/img/skill/nodejs.svg';
 import tailwindImage from '@/public/assets/img/skill/tailwind.svg';
@@ -23,10 +44,7 @@ import cssImage from '@/public/assets/img/skill/css.svg';
 import jsImage from '@/public/assets/img/skill/js.svg';
 import jqueryImage from '@/public/assets/img/skill/jquery.svg';
 
-import partner1Image from '@/public/assets/img/partners/logo1.svg';
-import partner2Image from '@/public/assets/img/partners/logo2.svg';
-import partner3Image from '@/public/assets/img/partners/logo3.svg';
-import partner4Image from '@/public/assets/img/partners/logo4.svg';
+
 
 import userImage from '@/public/assets/img/43.svg';
 import userImageLight from '@/public/assets/img/43.svg';
@@ -57,9 +75,7 @@ import blog4Image from '@/public/assets/img/blog/article4.png';
 import author1 from '@/public/assets/img/testimonial/author1.png';
 import author2 from '@/public/assets/img/testimonial/author2.png';
 import { IoHomeOutline } from 'react-icons/io5';
-import { LiaMoneyBillSolid } from 'react-icons/lia';
 import { CiMobile1 } from 'react-icons/ci';
-import { RiBrainLine } from 'react-icons/ri';
 
 export const introduce = {
 	iconBox: {
@@ -79,12 +95,28 @@ export const introduce = {
 	jobs: [
 		{
 			id: 1,
-			title: 'Available for work',
+			title: 'Web Geliştirme',
 			icon: <BiCheckDouble size={25} className='text-theme mr-1' />,
 		},
 		{
 			id: 2,
-			title: 'Full Time Job',
+			title: 'Mobil Geliştirme',
+			icon: <BiCheckDouble size={25} className='text-theme mr-1' />,
+		},{
+			id: 3,
+			title: 'UI/UX Tasarımı',
+			icon: <BiCheckDouble size={25} className='text-theme mr-1' />,
+		},{
+			id:4,
+			title: 'n8n / AI Automation',
+			icon: <BiCheckDouble size={25} className='text-theme mr-1' />,
+		},{
+			id: 5,
+			title: 'SEO & Dijital Pazarlama',
+			icon: <BiCheckDouble size={25} className='text-theme mr-1' />,
+		},{
+			id: 6,
+			title: 'Branding & Strategy',
 			icon: <BiCheckDouble size={25} className='text-theme mr-1' />,
 		},
 	],
@@ -92,23 +124,75 @@ export const introduce = {
 
 export const partners = [
 	{
-		imgUrl: partner1Image,
-		altText: 'freeCodeCamp',
+		imgUrl: nextjs,
+		altText: 'nextjs',
 		link: '#',
 	},
 	{
-		imgUrl: partner2Image,
-		altText: 'IBM',
+		imgUrl: nodejs,
+		altText: 'nodejs',
 		link: '#',
 	},
 	{
-		imgUrl: partner3Image,
-		altText: 'Meta',
+		imgUrl: android,
+		altText: 'android',
 		link: '#',
 	},
 	{
-		imgUrl: partner4Image,
-		altText: 'Microsoft',
+		imgUrl: anthropic,
+		altText: 'anthropic',
+		link: '#',
+	},{
+		imgUrl: appledark,
+		altText: 'appledark',
+		link: '#',
+	},{
+		imgUrl: bootstrap5,
+		altText: 'bootstrap5',
+		link: '#',
+	},{
+		imgUrl: docker,
+		altText: 'docker',
+		link: '#',
+	},{
+		imgUrl: html5,
+		altText: 'vhtml5',
+		link: '#',
+	},{
+		imgUrl: linux,
+		altText: 'linux',
+		link: '#',
+	},{
+		imgUrl: microsoftsqlserver,
+		altText: 'vmicrosoftsqlserver',
+		link: '#',
+	},{
+		imgUrl: mongodb,
+		altText: 'mongodb',
+		link: '#',
+	},{
+		imgUrl: n8n,
+		altText: 'n8n',
+		link: '#',
+	},{
+		imgUrl: postgresql,
+		altText: 'postgresql',
+		link: '#',
+	},{
+		imgUrl: reactquery,
+		altText: 'reactquery',
+		link: '#',
+	},{
+		imgUrl: reactjs,
+		altText: 'reactjs',
+		link: '#',
+	},{
+		imgUrl: supabase,
+		altText: 'supabase',
+		link: '#',
+	},{
+		imgUrl: tailwindcss,
+		altText: 'tailwindcss',
 		link: '#',
 	},
 ];
@@ -257,14 +341,14 @@ export const services = {
     {
       id: 1,
       number: '01',
-      title: 'Web Development',
+      title: 'Web Geliştirme',
       desc: 'React, Next.js ve modern web teknolojileri ile hızlı, güvenli ve tüm cihazlara uyumlu web uygulamaları geliştiriyorum.',
       icon: <WebDevIcon />,
     },
     {
       id: 2,
       number: '02',
-      title: 'Mobil Development (iOS & Android)',
+      title: 'Mobil Geliştirme (iOS & Android)',
       desc: 'React Native ve Expo ile yüksek performanslı, modern ve tüm cihazlara uyumlu mobil uygulamalar geliştiriyorum.',
       icon: <CiMobile1 className="size-10 fill-theme"/>, // istersen ikon tasarlayabilirim
     },
@@ -279,7 +363,7 @@ export const services = {
       id: 4,
       number: '04',
       title: 'Yapay Zekâ Otomasyonları (n8n / AI Automation)',
-      desc: 'n8n, Zapier ve OpenAI ile iş süreçlerinizi otomatikleştiriyor, size zaman kazandıran akıllı iş akışları oluşturuyorum.',
+      desc: 'n8n ve yapay zeka ile iş süreçlerinizi otomatikleştiriyor, size zaman kazandıran akıllı iş akışları oluşturuyorum.',
       icon: <BiBrain className="size-10 fill-theme"/>,
     },
     {

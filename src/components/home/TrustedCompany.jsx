@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const TrustedCompany = ({ imgUrl, altText }) => {
   return (
-    <div className="swiper-slide px-5">
+    <div className="swiper-slide px-5 max-w-24 ">
       <Link href="#" className="">
         <Image
           src={imgUrl}
