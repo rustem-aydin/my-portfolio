@@ -1,0 +1,16 @@
+{
+  "name": "Rüstem Aydın  | Kişisel",
+  "short_name": "üstem Aydın",
+  "description": "üstem Aydın",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#fff",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ]
+}
