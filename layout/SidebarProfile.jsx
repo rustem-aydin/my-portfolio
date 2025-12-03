@@ -19,7 +19,7 @@ const SidebarProfile = () => {
 
   return (
     <div className="w-full mx-auto minfo__sidebar__wrapper xl:fixed xl:top-1/2 xl:left-4 2xl:left-14 xl:-translate-y-1/2 sm:max-w-sidebar xl:max-2xl:max-w-xs z-999">
-      <div className="p-3 max-xl:mb-3 overflow-hidden minfo__sidebar bg-white dark:bg-nightBlack backdrop-blur-[2px] dark:bg-opacity-80 rounded-2xl">
+      <div className="p-3 max-xl:mb-3 overflow-hidden minfo__sidebar bg-white dark:bg-nightBlack backdrop-blur-[2px] dark:bg-opacity-80 bg-opacity-80 rounded-2xl">
         <div className="mx-4 mt-12 text-center user-info lg:mx-6">
           <Link
             href="/"
